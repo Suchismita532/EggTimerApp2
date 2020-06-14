@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <SeekBar
+        android:id="@+id/timerSeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="32dp"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/timerSeekBar"
+        app:srcCompat="@drawable/egg"
+        android:contentDescription="@string/todo" />
+
+    <TextView
+        android:id="@+id/timerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/_00_30"
+        android:textSize="70sp" />
+
+    <Button
+        android:id="@+id/controllerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/timerTextView"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="65dp"
+        android:onClick="controlTimer"
+        android:text="@string/go"
+        android:textSize="30sp" />
+
+</RelativeLayout>
